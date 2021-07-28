@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/ekran"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_margin="20dp"
+        android:layout_weight="1"
+        android:background="@drawable/textview_border"
+        android:text=" "
+        android:gravity="center_vertical"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/arti"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="+"
+            android:textColor="#000000"
+            app:backgroundTint="#FFC107"
+            app:cornerRadius="0dp"
+            app:rippleColor="#FFEB3B"
+            app:strokeColor="#000000"
+            app:strokeWidth="2dp"
+            android:textStyle="bold"/>
+        />
+
+        <Button
+            android:id="@+id/eksi"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:text="-"
+            android:textColor="#000000"
+            app:backgroundTint="#FFC107"
+            app:cornerRadius="0dp"
+            app:rippleColor="#FFEB3B"
+            app:strokeColor="#000000"
+            app:strokeWidth="2dp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/carpi"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:text="*"
+            android:textColor="#000000"
+            app:backgroundTint="#FFC107"
+            app:cornerRadius="0dp"
+            app:rippleColor="#FFEB3B"
+            app:strokeColor="#000000"
+            app:strokeWidth="2dp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/bolu"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:text="/"
+            android:textColor="#000000"
+            app:backgroundTint="#FFC107"
+            app:cornerRadius="0dp"
+            app:rippleColor="#FFEB3B"
+            app:strokeColor="#000000"
+            app:strokeWidth="2dp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/artıbolueksi"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:text="+/-"
+            android:textColor="#000000"
+            app:backgroundTint="#FFC107"
+            app:cornerRadius="0dp"
+            app:strokeColor="#000000"
+            app:strokeWidth="2dp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/sifir"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:text="0"
+            android:textColor="#000000"
+            app:backgroundTint="#FFFFFF"
+            app:rippleColor="#673AB7"
+            app:cornerRadius="0dp"
+            app:strokeColor="#000000"
+            app:strokeWidth="2dp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/nokta"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:text="."
+            android:textColor="#000000"
+            app:backgroundTint="#FFFFFF"
+            app:rippleColor="#9C27B0"
+            app:cornerRadius="0dp"
+            app:strokeColor="#000000"
+            app:strokeWidth="2dp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/temizle"
+            android:layout_width="170dp"
+            android:layout_height="80dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:text="Clear"
+            android:textColor="#000000"
+            app:backgroundTint="#FF6F00"
+            app:cornerRadius="0dp"
+            app:rippleColor="#FFEB3B"
+            app:strokeColor="#000000"
+            app:strokeWidth="2dp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    //karmaşık kısım başlangıç
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical"
+
+
+            >
+
+            <Button
+                android:id="@+id/bir"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:text="1"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                app:backgroundTint="#FFFFFF"
+                app:cornerRadius="0dp"
+                app:rippleColor="#9C27B0"
+                app:strokeColor="#000000"
+                app:strokeWidth="2dp" />
+
+            <Button
+                android:id="@+id/dort"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:text="4"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                app:backgroundTint="#FFFFFF"
+                app:cornerRadius="0dp"
+                app:rippleColor="#9C27B0"
+                app:strokeColor="#000000"
+                app:strokeWidth="2dp" />
+
+            <Button
+                android:id="@+id/yedi"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:text="7"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                app:backgroundTint="#FFFFFF"
+                app:cornerRadius="0dp"
+                app:rippleColor="#9C27B0"
+                app:strokeColor="#000000"
+                app:strokeWidth="2dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/iki"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:text="2"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                app:backgroundTint="#FFFFFF"
+                app:cornerRadius="0dp"
+                app:rippleColor="#9C27B0"
+                app:strokeColor="#000000"
+                app:strokeWidth="2dp" />
+
+            <Button
+                android:id="@+id/bes"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:text="5"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                app:backgroundTint="#FFFFFF"
+                app:cornerRadius="0dp"
+                app:rippleColor="#9C27B0"
+                app:strokeColor="#000000"
+                app:strokeWidth="2dp" />
+
+            <Button
+                android:id="@+id/sekiz"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:text="8"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                app:backgroundTint="#FFFFFF"
+                app:cornerRadius="0dp"
+                app:rippleColor="#9C27B0"
+                app:strokeColor="#000000"
+                app:strokeWidth="2dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/uc"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:text="3"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                app:backgroundTint="#FFFFFF"
+                app:cornerRadius="0dp"
+                app:rippleColor="#9C27B0"
+                app:strokeColor="#000000"
+                app:strokeWidth="2dp" />
+
+            <Button
+                android:id="@+id/alti"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:text="6"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                app:backgroundTint="#FFFFFF"
+                app:cornerRadius="0dp"
+                app:rippleColor="#9C27B0"
+                app:strokeColor="#000000"
+                app:strokeWidth="2dp" />
+
+            <Button
+                android:id="@+id/dokuz"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:text="9"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                app:backgroundTint="#FFFFFF"
+                app:cornerRadius="0dp"
+                app:rippleColor="#9C27B0"
+                app:strokeColor="#000000"
+                app:strokeWidth="2dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="74dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            >
+
+            <Button
+                android:id="@+id/esittir"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:text="="
+                android:textColor="#000000"
+                android:textStyle="bold"
+                app:backgroundTint="#00BCD4"
+                app:cornerRadius="0dp"
+                app:rippleColor="#FFEB3B"
+                app:strokeColor="#000000"
+                app:strokeWidth="2dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
